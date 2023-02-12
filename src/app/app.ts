@@ -18,3 +18,4 @@ let qryBldrObj: QueryBuilder = new QueryBuilder({
     columns: columnData,
 });
 qryBldrObj.appendTo('#querybuilder');
+
