@@ -16,19 +16,64 @@
 
 /* Any Custom Styling */
 .query-container {
-    margin-top: 5em;
+    margin: 8em 4em;
+}
+
+.query-builder {
+    padding: 1em;
+    border: 1px solid red !important;
+    width: 100% !important;
 }
 
 
-/* Customize the condition button */
+/* The builder itself */
+.e-query-builder {
+    border: none;
+    width: fit-content;
+  }
+
+.e-group-body {
+    margin-left: 3.25em;
+}
+
+
+/* and / or button styling */
+.e-btn-group {
+    box-shadow: none !important;
+}
+
+.e-btn-group:active {
+    box-shadow: none !important;
+}
+
+/* controls the style when there are two or more groups or conditions */
+.e-btn-group input:checked+label.e-btn {
+    box-shadow: none !important;
+    background: #1b75bb !important;
+    border-color: #1b75bb !important;
+}
+
+
+/* Customize the condition button - includes the + sign button */
 .e-group-header .e-btn {
-
+    box-shadow: none;
+    border: 1px solid lightgray;
 }
+
+.e-group-header .e-btn:focus {
+    box-shadow: none;
+    border: 1px solid lightgray;
+}
+
+
+
 
 
 /* 	To customize the querybuilder rule container */
 .e-group-body .e-rule-container {
-
+    box-shadow: none !important;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
 }
 
 
@@ -45,8 +90,10 @@
 
 /* To customize the querybuilder Delete condition button */
 .e-query-builder .e-rule-field .e-rule-value-delete .e-rule-delete {
-
+    border: 1px solid lightgrey;
+    background: red;
 }
+
 
 /* To customize the querybuilder group joining line */
 .e-query-builder .e-rule-list > ::after,.e-query-builder .e-rule-list > ::before {
@@ -57,5 +104,12 @@
  */
 
  .e-query-builder .e-rule-container.e-joined-rule {
-
+    border-top: none !important;
  }
+
+
+
+/* Input boxes */
+ /* .e-input-group {
+    width: 250px !important;
+ } */
